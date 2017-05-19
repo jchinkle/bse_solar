@@ -20,6 +20,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec'
   gem 'rspec-rails'
+  gem 'fuubar'
 end
 
 group :development do
