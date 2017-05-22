@@ -13,6 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'therubyracer', platforms: :ruby
 gem 'jbuilder', '~> 2.5'
+gem 'webpacker'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -21,6 +22,7 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'fuubar'
+  gem 'pry-rails'
 end
 
 group :development do
