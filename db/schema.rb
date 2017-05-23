@@ -10,6 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170523231126) do
+
+  create_table "charger_intervals", force: :cascade do |t|
+    t.integer "time_interval_id"
+    t.float "max_pv_volts"
+    t.float "max_charge_amps"
+    t.float "charge_amp_hours"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "time_intervals", force: :cascade do |t|
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.float "time_period"
+    t.float "max_total_charge_amps"
+    t.float "battery_volts_max"
+    t.float "battery_volts_min"
+    t.float "accept_charge_time"
+    t.float "float_charge_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
