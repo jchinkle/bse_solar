@@ -24,6 +24,7 @@ group :development, :test do
   gem 'fuubar'
   gem 'pry-rails'
   gem 'timecop'
+  gem 'shoulda-matchers'
 end
 
 group :development do
