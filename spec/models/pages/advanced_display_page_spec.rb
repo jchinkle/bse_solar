@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe AdvancedDisplayPage do
+describe Pages::AdvancedDisplayPage do
   let(:display) { described_class.new("test.url") }
 
   before(:each) do
