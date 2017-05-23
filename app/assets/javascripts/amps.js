@@ -17,7 +17,9 @@ amps_options = {
   yAxis: {
     title: {
       text: 'Max Amps'
-    }
+    },
+    min: 0,
+    softMax: 20 
   },
   tooltip: {
     split: true,
@@ -25,7 +27,8 @@ amps_options = {
   },
   plotOptions: {
     line: {
-      enableMouseTracking: true
+      enableMouseTracking: true,
+      softThreshold: false
     }
   },
   series: [ 
@@ -64,7 +67,9 @@ ah_options = {
   yAxis: {
     title: {
       text: 'Amp Hours'
-    }
+    },
+    min: 0,
+    softMax: 20 
   },
   tooltip: {
     split: true,
@@ -72,7 +77,8 @@ ah_options = {
   },
   plotOptions: {
     line: {
-      enableMouseTracking: true
+      enableMouseTracking: true,
+      softThreshold: false
     }
   },
   series: [ 
