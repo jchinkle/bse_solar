@@ -28,9 +28,12 @@ describe DataLoader do
   end
 
   describe '#new_records' do
-    it 'returns an array' do
-      expect(loader.new_records).to be_a(Array)
+    it 'creates time interval records' do
+      expect{ loader.save }.to change{ TimeInterval.count }.by(3)
     end
 
+    it 'creates charger interval records' do
+      expect{ loader.save }.to change{ ChargerInterval.count }.by(6)
+    end
   end
 end
